@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReccFavoritesViewCell" id="ikc-N6-dYK" customClass="ReccFavoritesViewCell" customModule="TowardsBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBc-D9-uHB" customClass="CardView" customModule="TowardsBook" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="188" height="171"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-cs-5sz">
+                                <rect key="frame" x="23" y="14" width="142" height="143"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dNu-cs-5sz" firstAttribute="centerX" secondItem="YBc-D9-uHB" secondAttribute="centerX" id="d0H-Wv-jHU"/>
+                            <constraint firstItem="dNu-cs-5sz" firstAttribute="centerY" secondItem="YBc-D9-uHB" secondAttribute="centerY" id="dOa-Sn-YmG"/>
+                            <constraint firstItem="dNu-cs-5sz" firstAttribute="leading" secondItem="YBc-D9-uHB" secondAttribute="leading" constant="23" id="hmy-eg-RMC"/>
+                            <constraint firstItem="dNu-cs-5sz" firstAttribute="top" secondItem="YBc-D9-uHB" secondAttribute="top" constant="14" id="q09-iz-JDq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="5DM-Dw-Qku"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YBc-D9-uHB" secondAttribute="trailing" constant="4" id="hGe-OZ-Teg"/>
+                <constraint firstAttribute="bottom" secondItem="YBc-D9-uHB" secondAttribute="bottom" constant="4" id="uFM-dg-VHF"/>
+                <constraint firstItem="YBc-D9-uHB" firstAttribute="top" secondItem="ikc-N6-dYK" secondAttribute="top" constant="4" id="wtF-L5-ZYb"/>
+                <constraint firstItem="YBc-D9-uHB" firstAttribute="leading" secondItem="ikc-N6-dYK" secondAttribute="leading" constant="4" id="yRh-uv-Ghf"/>
+            </constraints>
+            <size key="customSize" width="112" height="173"/>
+            <connections>
+                <outlet property="favimgView" destination="dNu-cs-5sz" id="T7g-Xa-qAP"/>
+            </connections>
+            <point key="canvasLocation" x="-85.507246376811594" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

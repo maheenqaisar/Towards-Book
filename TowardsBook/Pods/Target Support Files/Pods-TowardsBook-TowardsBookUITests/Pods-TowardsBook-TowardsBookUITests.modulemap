@@ -1,0 +1,6 @@
+framework module Pods_TowardsBook_TowardsBookUITests {
+  umbrella header "Pods-TowardsBook-TowardsBookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
